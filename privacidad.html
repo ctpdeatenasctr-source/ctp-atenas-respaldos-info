@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Política de privacidad | Respaldos CTP Atenas</title>
+  <style>
+    :root{--navy:#102746;--blue:#19558d;--ink:#26384b;--muted:#53677e;--bg:#f5f8fc}*{box-sizing:border-box}body{margin:0;background:var(--bg);font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink)}header{background:linear-gradient(115deg,#102746,#19558d);color:#fff;padding:33px max(24px,calc((100vw - 850px)/2)) 66px}header a{color:#fff}h1{font-size:clamp(2rem,4vw,3rem);margin:25px 0 5px;line-height:1.2}header p{color:#dceafa}main{max-width:850px;margin:-34px auto 55px;padding:0 18px;position:relative}.paper{background:#fff;padding:clamp(24px,5vw,48px);border:1px solid #dbe5f0;border-radius:18px;box-shadow:0 14px 35px #10274610}h2{color:var(--navy);font-size:1.18rem;margin-top:30px}p,li{max-width:75ch}a{color:var(--blue);font-weight:650;text-underline-offset:3px}.stamp{color:var(--muted);font-size:.89rem}.note{background:#eef8f9;border-left:4px solid #137d81;border-radius:0 9px 9px 0;padding:15px 20px;margin-top:28px}footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 20px 28px}
+  </style>
+</head>
+<body>
+<header><a href="index.html">← Volver a información de la integración</a><h1>Política de privacidad</h1><p>Integración administrativa de respaldos cifrados del Sistema de Evaluación de Ferias · CTP de Atenas</p></header>
+<main><article class="paper">
+  <p class="stamp">Versión informativa: 22 de octubre de 2026</p>
+  <h2>1. Responsable y finalidad</h2>
+  <p>Esta integración es administrada para el Sistema de Evaluación de Ferias del CTP de Atenas. Su finalidad es permitir la creación, verificación, almacenamiento y eventual recuperación de copias de seguridad de la información operativa del sistema.</p>
+  <h2>2. Información y permisos de Google</h2>
+  <p>Se utiliza la autorización OAuth de Google Drive con el alcance <code>drive.file</code>. Este permiso permite a rclone gestionar archivos creados o autorizados para la integración. La autorización no se utiliza para leer correos de Gmail ni para consultar datos ajenos al proceso de respaldo. Google puede mostrar los datos básicos necesarios para administrar la autorización de la cuenta.</p>
+  <h2>3. Datos contenidos en los respaldos</h2>
+  <p>Las copias de la base de datos pueden incluir registros institucionales, información de proyectos, estudiantes, responsables, evaluadores y resultados de evaluación, según el contenido existente en el sistema al momento de la copia. Estos datos no se publican en el sitio informativo.</p>
+  <h2>4. Tratamiento técnico y seguridad</h2>
+  <p>Los respaldos se preparan temporalmente en un ejecutor automatizado de GitHub Actions. Antes de transferirse a Google Drive, se cifran. Los archivos almacenados en Drive permanecen cifrados y su restauración requiere una clave independiente. Se mantienen credenciales y contraseñas fuera del repositorio público y de los archivos del sitio.</p>
+  <p>El proceso implica el uso técnico de los servicios de Supabase, GitHub y Google necesarios para realizar y almacenar los respaldos. No se comercializan los datos ni se comparten públicamente los respaldos.</p>
+  <h2>5. Conservación y eliminación</h2>
+  <p>Las copias se conservan mientras sean necesarias para la continuidad operativa y conforme a las decisiones y obligaciones institucionales aplicables. La automatización actual no elimina automáticamente todas las generaciones antiguas: la revisión y eliminación de respaldos se realiza bajo control administrativo.</p>
+  <h2>6. Acceso y recuperación</h2>
+  <p>El acceso a la cuenta de Drive y a las claves de descifrado queda reservado a los responsables autorizados. La información solo debe recuperarse por motivos legítimos de continuidad, verificación o restauración del servicio.</p>
+  <h2>7. Derechos y consultas</h2>
+  <p>Las consultas sobre esta integración o sobre el tratamiento de los datos deben dirigirse a la administración responsable del Sistema de Evaluación de Ferias del CTP de Atenas por los canales institucionales correspondientes.</p>
+  <h2>8. Actualizaciones</h2>
+  <p>Esta política se revisará cuando cambien los permisos solicitados, los servicios de respaldo, las medidas de seguridad o los períodos de conservación.</p>
+  <div class="note"><strong>Aclaración:</strong> Este sitio es informativo. No almacena bases de datos, claves privadas, tokens OAuth ni archivos de respaldo.</div>
+</article></main>
+<footer>CTP de Atenas · Integración administrativa de Google Drive</footer>
+</body>
+</html>
